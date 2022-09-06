@@ -17,7 +17,7 @@
 [Live Demo Link]()
 
 ### Setup
-- To clone the repository run `https://github.com/NATASHA-ct/bookstore.git` in your terminal
+- To clone the repository run `` in your terminal
 - run cd Leaderboard
 - run npm install
 - run npm run build
