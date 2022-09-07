@@ -11,7 +11,7 @@ const Productcard = (props) => {
         <div>
             <h1>{title}</h1>
             <p>{price}</p>
-            <img src={image} width="200px" height="200px"/>
+            <img src={image} alt={title} width="200px" height="200px"/>
         </div>
         </div>
     </Link>

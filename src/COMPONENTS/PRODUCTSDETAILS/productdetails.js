@@ -1,31 +1,31 @@
+/* eslint-disable */
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  getProductDetail,
-  fetchProducts,
-} from "../../REDUX/products/productsSlice";
+import { fetchProducts } from "../../REDUX/products/productsSlice";
+import { getProductDetails } from "../../REDUX/products/productsdetailsSlice";
 
-const Productdetails = () => {
+const ProductDetails = () => {
   const { id } = useParams();
-  const { product } = useSelector((state) => state.products);
+  const { product } = useSelector((state) => state.productDetail);
   const dispatch = useDispatch();
-  console.log(product);
-
+ 
   useEffect(() => {
-    dispatch(fetchProducts());
-    dispatch(fetchProductDetails(id));
-    dispatch(getProductDetail(1));
-  }, [dispatch, id]);
+    dispatch(fetchProducts())
+      .unwrap()
+      .then((result) => {
+        dispatch(getProductDetails({ products: result, id: Number(id) }));
+      });
+  }, []);
   return (
     <div id={product.id}>
       <div>
         <h1>{product.title}</h1>
-        <p> $ {product.price}</p>
+        <p>{product.price}</p>
         <img src={product.image} alt={product.title} />
       </div>
     </div>
   );
 };
 
-export default Productdetails;
+export default ProductDetails;

@@ -1,8 +1,13 @@
+/* eslint-disable */
 import { configureStore } from "@reduxjs/toolkit";
-import ProductsReducer from "./products/productsSlice";
+import productReducer from "./products/productsSlice";
+import productDetailsReducer from "./products/productsdetailsSlice";
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    products: ProductsReducer,
+    products: productReducer,
+    productDetail: productDetailsReducer,
   },
 });
+
+export default store;

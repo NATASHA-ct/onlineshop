@@ -1,22 +1,37 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
-import { fetchProducts, getProductDetail } from "../../REDUX/products/productsSlice";
+import { useEffect, useState } from "react";
+import { fetchProducts} from "../../REDUX/products/productsSlice";
 import Productcard from "../PRODUCTCARD/Productcard";
 
 const Productlist = () => {
+  const [searchTerm, setSearchTerm] = useState("");
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
+   const filteredProducts = products.filter((product) =>
+     product.title.toLowerCase().includes(searchTerm.toLowerCase())
+   );
 
   useEffect(() => {
     dispatch(fetchProducts());
-    dispatch(getProductDetail(1));
-  }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchTerm]);
+
+  const handleChange = (e) => {
+    const { value } = e.target;
+    setSearchTerm(value);
+  };
 
   return (
     <div>
-      <h2>Intended product List Page</h2>
-      {products.map((product) => (
+      <input
+        type="text"
+        name="search"
+        value={searchTerm}
+        onChange={handleChange}
+      />
+      <h2>Available Products</h2>
+      {filteredProducts.map((product) => (
         <Productcard
           id={product.id}
           key={product.id}
