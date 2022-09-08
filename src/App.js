@@ -13,7 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element ={<Home />} />
-          <Route path="/product/:productId" element={<Productdetails />} />
+          <Route path="/product/:id" element={<Productdetails />} />
           <Route component={<Pagenotfound />} />
         </Routes>
         <Footer />

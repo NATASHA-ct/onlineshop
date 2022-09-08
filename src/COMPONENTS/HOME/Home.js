@@ -3,9 +3,8 @@ import Productlist from "../PRODUCTSLIST/Productlist";
 
 const Home = () => (
   <div className="hmpg-container">
-    <p>
-      This is where the list of of the project will show and
-      and you can filter your search
+    <p className="search-title">
+      Search below for your favorite product..
     </p>
     <Productlist />
   </div>

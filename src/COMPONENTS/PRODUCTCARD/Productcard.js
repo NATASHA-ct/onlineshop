@@ -1,22 +1,19 @@
-import React from "react";
+/* eslint-disable */
 import { Link } from "react-router-dom";
 
-const Productcard = (props) => {
-     const {
-    id, title, price, image,
-  } = props;
+const Productcard= (props) => {
+  const { id, title, price, image} = props;
   return (
-    <Link to={`/products/${id}`}>
-        <div id={id}>
-        <div>
-            <h1>{title}</h1>
-            <p>{price}</p>
-            <img src={image} alt={title} width="200px" height="200px"/>
-        </div>
-        </div>
+    <Link to={`/product/${id}`}>
+      <div className="card" id={id}>
+        <div className="card-container">
+          <img className="card-img" src={image} width="200px" height="200px" />
+          <h1 className="card-title">{title}</h1>
+          <p className="card-price">$ {price}</p>
+       </div>
+      </div>
     </Link>
   );
 };
 
- 
 export default Productcard;

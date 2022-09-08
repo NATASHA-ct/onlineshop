@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
     return ( 
-    <div>
-        Footer
-    </div> 
+    <footer>
+      Copyright @Natasha Tatenda Chirombe
+    </footer> 
     );
 }
  
