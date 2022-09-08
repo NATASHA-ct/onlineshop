@@ -23,30 +23,27 @@ const ProductList = () => {
   return (
     <div>
       <div className="input">
-          <input
-        type="text"
-        name="search"
-        value={searchTerm}
-        onChange={handleChange}
-         />
-         
+        <p className="search-title">Search below for your favorite product..</p>
+        <input
+          type="text"
+          name="search"
+          value={searchTerm}
+          onChange={handleChange}
+        />
       </div>
-    
-      <h2>AVAILABLE PRODUCTS</h2>
+
+      <h2 className="list-heading">AVAILABLE PRODUCTS</h2>
       <div className="list-container">
         {filteredProducts.map((product) => (
-        
-            <Productcard
+          <Productcard
             id={product.id}
             key={product.id}
             title={product.title}
             price={product.price}
             image={product.image}
-            rate={product.rating.rate}
-            count={product.rating.count}
-           />
-        
-      ))}
+            category={product.category.name}
+          />
+        ))}
       </div>
     </div>
   );
