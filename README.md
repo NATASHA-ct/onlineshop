@@ -10,6 +10,7 @@
 - CSS
 - JavaScrpt
 - REACT
+- [Fakestoreapi](https://fakestoreapi.com/)
 
 ## Live Demo in progress , web app to be deployed...()
 
@@ -49,6 +50,10 @@
 - GitHub: [@NATASHA-ct]((https://github.com/NATASHA-ct)
 - Twitter: [@NatashaChirombe]
 - LinkedIn: [Natasha Chirombe](linkedin.com/in/natasha-chirombe-1531aa17b)
+
+## Acknowlwdgement
+
+Nelson Sakwa on Behance for his designs
 
 ## 🤝 Contributing
 
