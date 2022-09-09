@@ -174,7 +174,7 @@ footer{
 }
 
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 600px) {
 .list-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
