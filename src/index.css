@@ -8,6 +8,8 @@
 body{
     border: 2px solid #3a343e85;
     background-color:#2f3140;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 
@@ -97,7 +99,7 @@ input:focus{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px;
     grid-auto-flow: dense;
-
+    padding-bottom: 5em;
 }
 .list-container a{
     margin:5px ;
@@ -172,7 +174,7 @@ footer{
 }
 
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 600px) {
 .list-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

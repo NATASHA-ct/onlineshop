@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`to test the Productcard components matches the Productcard DOM snapshot 1`] = `
+<a
+  href="/product/undefined"
+  onClick={[Function]}
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-container"
+    >
+      <img
+        className="card-img"
+        height="200px"
+        width="200px"
+      />
+      <div
+        className="card-details"
+      >
+        <h1
+          className="card-title"
+        />
+        <p
+          className="card-price"
+        >
+          $ 
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+`;
