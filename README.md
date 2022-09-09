@@ -14,7 +14,7 @@
 
 ## Live Demo in progress , web app to be deployed...()
 
-[Live Demo Link]()
+[Live Demo Link](https://prismatic-banoffee-c996a7.netlify.app)
 
 ### Setup
 
