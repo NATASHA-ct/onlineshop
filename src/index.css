@@ -22,17 +22,18 @@ header {
 .Header {
   display: flex;
   justify-content: space-between;
-  padding: 33px 10px;
-  box-shadow: 5px 15px 40px 10px #2d303b;
-}
+  align-items: center;
+  padding: 8px 0;
+ }
 
 .Header h1 {
   color: rgb(145, 176, 212);
+  font-size: 21px;
 }
 
 .headerIcons {
   display: flex;
-  gap: 5px;
+  gap: 14px;
 }
 
 .mic {
@@ -91,6 +92,7 @@ input:focus {
   padding: 40px 30px;
   text-align: center;
   color: #9fa8da;
+  font-size: 20px;
 }
 
 a {
@@ -102,7 +104,6 @@ a:hover {
 }
 
 .list-container a {
-  margin: 5px;
   margin-bottom: 2px;
   border: 1px solid rgb(49, 45, 59);
   border-radius: 5px;
@@ -130,19 +131,18 @@ a:hover {
 .card-title {
   font-size: 1em;
   font-style: normal;
-  color: black;
+  color: #91b0d4;
 }
 
 .list-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px;
   grid-auto-flow: dense;
   padding-bottom: 5em;
 }
 
 .card-price {
-  color: black;
+  color: #9c97e8ab;
   font-weight: bold;
 }
 
@@ -157,13 +157,8 @@ a:hover {
 
 /* details page */
 .goback-btn {
-  margin-left: 2px;
-  background-color: #3b37555c;
-  padding: 8px 30px;
   border-radius: 5px;
   border: none;
-  box-shadow: -2px 2px 0 hsl(240deg 30% 23% / 15%);
-  color: hsl(206deg 14% 49%);
 }
 
 footer {
@@ -175,7 +170,7 @@ footer {
 @media screen and (min-width: 600px) {
   .list-container a:nth-of-type(odd) {
     background: #2e29379c;
-  }
+    }
 
   .list-container a:nth-child(even) {
     background: rgb(51, 51, 75);
@@ -185,6 +180,15 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .Header h1 {
+  color: rgb(145, 176, 212);
+  font-size: 35px;
+}
+
+.list-heading {
+   font-size: 30px;
+}
 }
 
 @media screen and (min-width: 900px) {

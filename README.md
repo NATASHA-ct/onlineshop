@@ -53,7 +53,8 @@
 
 ## Acknowlwdgement
 
-Nelson Sakwa on Behance for his designs
+[Nelson Sakwa on Behance for design](https://www.behance.net/sakwadesignstudio)
+the Creative Commons License.
 
 ## 🤝 Contributing
 

@@ -1,7 +1,6 @@
 /* eslint-disable */
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchProducts } from "../../REDUX/products/productsSlice";
 import { getProductDetails } from "../../REDUX/products/productsdetailsSlice";
@@ -21,9 +20,7 @@ const ProductDetails = () => {
   }, []);
   return (
     <div id={product.id}>
-      <Link to="/">
-        <button className="goback-btn"> Click here to go back</button>
-      </Link>
+      
 
       <div className="product-container">
         <img className="prod-img" src={product.image} alt={product.title} />
