@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react';
 
-const Footer = () => {
-    return ( 
-    <footer>
-      Copyright @Natasha Tatenda Chirombe
-    </footer> 
-    );
-}
- 
+const Footer = () => (
+  <footer>
+    Copyright @Natasha Tatenda Chirombe
+  </footer>
+);
+
 export default Footer;
