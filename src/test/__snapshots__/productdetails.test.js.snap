@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`to test the ProductDetails components matches the ProductDetails DOM snapshot 1`] = `
+<div>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <button
+      className="goback-btn"
+    >
+       Click here to go back
+    </button>
+  </a>
+  <div
+    className="product-container"
+  >
+    <img
+      className="prod-img"
+    />
+    <h1
+      className="product-title"
+    />
+    <div>
+      <p
+        className="product-price"
+      >
+        $ 
+      </p>
+    </div>
+    <p
+      className="product-descrip"
+    />
+  </div>
+</div>
+`;
+
+exports[`to test the Productcard components matches the Productcard DOM snapshot 1`] = `
+<a
+  href="/product/undefined"
+  onClick={[Function]}
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-container"
+    >
+      <img
+        className="card-img"
+        height="200px"
+        width="200px"
+      />
+      <div
+        className="card-details"
+      >
+        <h1
+          className="card-title"
+        />
+        <p
+          className="card-price"
+        >
+          $ 
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+`;
