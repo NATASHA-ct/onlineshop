@@ -12,7 +12,7 @@
 - REACT
 - [Fakestoreapi](https://fakestoreapi.com/)
 
-## Live Demo in progress , web app to be deployed...()
+## Click here to see the live demo
 
 [Live Demo Link](https://prismatic-banoffee-c996a7.netlify.app)
 
